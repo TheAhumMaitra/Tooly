@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator | Tools</title>
+</head>
+<body>
+    <p>Enter birth year</p>
+    <input type="number" id="birth">
+    <p>Enter current year</p>
+    <input type="number" id="current">
+    <button type="submit" onclick="calculate()">Submit</button>
+    <p id="return"></p>
+
+    <script>
+      function calculate() {
+        const birth = parseInt(document.getElementById("birth").value);
+        const current = parseInt(document.getElementById("current").value);
+
+        if (isNaN(birth) || isNaN(current)) {
+            document.getElementById("return").innerText = "Please enter valid numbers.";
+            return;
+        }
+
+        if (birth > current) {
+            document.getElementById("return").innerText = "Birth year cannot be greater than the current year.";
+        } else {
+            const age = current - birth;
+            document.getElementById("return").innerText = `Your age is ${age} years.`;
+        }
+      }
+    </script>
+</body>
+</html>

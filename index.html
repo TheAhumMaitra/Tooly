@@ -6,9 +6,12 @@
     <title>Home | Tooly, your best tool for everything digital!</title>
     <link rel="stylesheet" href="styles.css" />
     <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Coral+Pixels&family=Oswald:wght@200..700&family=Tagesschrift&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Coral+Pixels&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DK+Loopet:wght@100..400&family=Tagesschrift&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav>
@@ -26,71 +29,89 @@
         <li><a target="_blank" href="#contact">Contact us</a></li>
       </ul>
     </nav>
-    <input type="search" name="search" id="search" placeholder="What's on your mind?">
+
+    <input
+      type="search"
+      name="search"
+      id="search"
+      placeholder="What's on your mind?"
+    />
+
     <div id="welcome">
       <h2>Welcome to Tooly!</h2>
       <h3>Your best tool for anything digital!</h3>
       <p>
-        Tooly is a tool for everyone, it have 200+ tools for everybody,a simple
-        calculator to random number generator to all, everything is free and
-        easy to use, just search it and our AI will show the correct tool for
-        that! Just say a word, Tooly is here! What's on your mind?
+        Tooly is a tool for everyone, it has 200+ tools for everybody—a simple
+        calculator to a random number generator and everything in between.
+        Everything is free and easy to use. Just search it and our AI will show
+        the correct tool! Just say a word, Tooly is here! What's on your mind?
       </p>
     </div>
+
     <div id="featured">
       <h2>Here's some popular tools!</h2>
-      <iframe src="featured.html" frameborder="0"></iframe>
+      <iframe src="featured.html" frameborder="0"
+        >add tools here.....error 404</iframe
+      >
     </div>
+
     <div id="about">
       <h2>About Tooly!</h2>
       <p>
-        "Tooly is a open-source project, it can be contributed in Github (Click
-        the button for the repo or directly search for Tooly). Tooly is
-        developed by Ahum Maitra. View the license for correct guidelines.
-        Thanks"
+        "Tooly is an open-source project. It can be contributed to on GitHub.
+        (Click the button for the repo or search for Tooly). Tooly is developed
+        by Ahum Maitra. View the license for correct guidelines. Thanks"
       </p>
       <p id="quote">~Ahum</p>
     </div>
+
     <div id="contact">
       <h2>Contact Us for any problem</h2>
       <p>
-        Any problem or question, ask! If you want to contribute to Tooly, see
-        Github and search for "Tooly"
+        Any problem or question? Ask! If you want to contribute to Tooly, see
+        GitHub and search for "Tooly"
       </p>
-      <form action="" method="post">
-        <p>Name:</p>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          placeholder="Enter your name"
-          required
-        />
-        <p>Email address</p>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Enter your email address"
-          required
-        />
-        <p>Subject</p>
-        <input
-          type="text"
-          name="subject"
-          id="subject"
-          placeholder="Enter the subject"
-          required
-        />
-        <p>Message</p>
-        <input
-          type="text"
-          name="message"
-          id="message"
-          placeholder="Enter your message"
-          required
-        />
-      </form>
+      <div class="things">
+        <form action="" method="post">
+          <p>Name:</p>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+          <p>Email address</p>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <p>Subject</p>
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Enter the subject"
+            required
+          />
+          <p>Message</p>
+          <input
+            type="text"
+            name="message"
+            id="message"
+            placeholder="Enter your message"
+            required
+          />
+          <br />
+
+          <br />
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
